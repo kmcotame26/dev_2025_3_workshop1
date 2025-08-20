@@ -90,13 +90,9 @@ class Geometria:
         return (A, B, C)
     
     def area_poligono_regular(self, num_lados, lado, apotema):
-        if apotema is None:
-           apotema = lado / (2 * math.tan(math.pi / num_lados))
-           area = (num_lados * lado * apotema) / 2
-
-        if n == 4:
-            return round(area * 2, 2)
-        return round(area, 2)
+         perimetro = n * lado
+         area = (perimetro * apotema) / 2
+         return area
     
     def perimetro_poligono_regular(self, num_lados, lado):
         return num_lados * lado
