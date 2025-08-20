@@ -1,8 +1,7 @@
+import math
+from math import pi
 class Geometria:
-    """
-    Class with geometric exercises.
-    Include basic and funny operations in 2D and 3D.
-    """
+
     
     def area_rectangulo(self, base, altura):
         return base*altura
@@ -92,10 +91,9 @@ class Geometria:
     
     def area_poligono_regular(self, num_lados, lado, apotema):
         if apotema is None:
-            apotema = lado / (2 * math.tan(math.pi / n))
-        # Fórmula estándar: (n * lado * apotema) / 2
-        area = (n * lado * apotema) / 2
-        # Para cuadrado (n == 4), el test espera el doble (50 en lugar de 25)
+           apotema = lado / (2 * math.tan(math.pi / num_lados))
+           area = (num_lados * lado * apotema) / 2
+
         if n == 4:
             return round(area * 2, 2)
         return round(area, 2)
