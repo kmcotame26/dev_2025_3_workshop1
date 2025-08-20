@@ -90,7 +90,7 @@ class Geometria:
         return (A, B, C)
     
     def area_poligono_regular(self, num_lados, lado, apotema):
-         perimetro = n * lado
+         perimetro = num_lados * lado
          area = (perimetro * apotema) / 2
          return area
     
